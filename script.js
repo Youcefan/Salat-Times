@@ -39,7 +39,7 @@ btn.onclick = function() {
 
    function getsalattime(id){
     
-    axios.get(`http://api.aladhan.com/v1/timingsByCity?city=${id}&country=Algeria&method=19`)
+    axios.get(`https://api.aladhan.com/v1/timingsByCity?city=${id}&country=Algeria&method=19`)
    .then(function (salattime) {
       document.getElementById("asr").innerHTML = `${salattime.data.data.timings.Asr}` ;
       document.getElementById("fajr").innerHTML = `${salattime.data.data.timings.Fajr}` ;
