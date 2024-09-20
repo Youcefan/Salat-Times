@@ -12,7 +12,7 @@
     background-color: black;
     display: flex;
     align-items: center;
-    justify-content: center;
+    justify-content: space-around;
 }
 .header a{
     font-size: 35px;
@@ -146,6 +146,10 @@
     width: 100%;
     background-color:#FF7B1C ;
     text-align: center;
+}
+#next{
+    color: white;
+    font-size: 25px;
 }
 
 @media (max-width:1078px){
