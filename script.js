@@ -43,6 +43,7 @@ for (let i = 0; i < Wilaya.length; i++) {
 
 function getsalattime(id) {
     axios.get(`https://api.aladhan.com/v1/timingsByCity?city=${id}&country=Algeria&method=19`)
+
         .then(function (salattime) {
             let time = salattime.data.data.timings;
             document.getElementById("asr").innerHTML = `${time.Asr}`;
